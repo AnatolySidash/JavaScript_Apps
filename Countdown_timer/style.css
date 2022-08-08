@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   padding: 0;
+   margin: 0;
+}
+
+
+body {
+   background: url(../Countdown_timer/img/02.jpg) center no-repeat;
+   background-size: cover;
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   min-height: 90vh;
+   width: 100%;
+}
+
+.timer__container {
+   max-width: 1000px;
+   display: flex;
+   margin: 50px auto;
+   justify-content: space-evenly;
+}
+
+.timer__block {
+   min-width: 100px;
+   text-align: center;
+   background-color: rgba(127, 255, 238, 0.4);
+   border-radius: 5px;
+}
+
+.timer__title {
+   font-size: 50px;
+   color: rgba(51, 17, 83);
+}
+
+.timer__comment {
+   font-size: 20px;
+   color: rgb(51, 17, 83);
+}
+
+.title {
+   color: rgb(51, 17, 83);
+   font-size: 50px;
+   margin: 50px 0;
+   text-align: center;
+}
