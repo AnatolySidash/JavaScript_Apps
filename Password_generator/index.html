@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Password Generator</title>
+
+</head>
+
+<body>
+
+   <h1 class="app__title">Password Generator</h1>
+
+   <div class="password__container">
+      <div class="password__header">
+         <div class="password" id="pw"></div>
+         <button class="button" id="copy">Copy</button>
+      </div>
+      <div class="password__body">
+         <div class="form__control">
+            <label for="len" class="label">Password Length <span>(Max Length = 20)</span></label>
+            <input type="number" value="15" min="8" max="20" id="len" class="input">
+         </div>
+         <div class="form__control">
+            <label for="upper" class="label">Include Uppercase Letters</label>
+            <input type="checkbox" id="upper" class="input" checked>
+         </div>
+         <div class="form__control">
+            <label for="lower" class="label">Include Lowercase Letters</label>
+            <input type="checkbox" id="lower" class="input">
+         </div>
+         <div class="form__control">
+            <label for="number" class="label">Include Numbers</label>
+            <input type="checkbox" id="number" class="input">
+         </div>
+         <div class="form__control">
+            <label for="symbol" class="label">Include Symbols</label>
+            <input type="checkbox" id="symbol" class="input">
+         </div>
+      </div>
+      <button class="button button__long" id="generate">Generate Password</button>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
