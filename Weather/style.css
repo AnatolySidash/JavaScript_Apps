@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(92.7deg, rgba(245, 212, 212, 1) 8.5%, rgba(252, 251, 224, 1) 90.2%);
+}
+
+p {
+   padding: 0;
+   margin-top: 0;
+   font-size: 24px;
+}
+
+.weather__block {
+   padding: 20px;
+   text-align: center;
+   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   border-radius: 5px;
+   color: #fff;
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+   min-width: 400px;
+}
+
+.location__input {
+   width: 100%;
+   height: 30px;
+   font-size: 16px;
+   background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   padding: 3px 10px;
+   color: rgb(31, 29, 29);
+   font-family: inherit;
+}
+
+.location__input::placeholder {
+   color: rgb(31, 29, 29);
+   font-family: inherit;
+}
+
+.location__search input:focus {
+   background-color: #101416;
+}
+
+.title {
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #dae9ec;
+   font-family: inherit;
+   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   padding: 13px;
+   width: 400px;
+   text-align: center;
+   border-radius: 5px;
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+   color: #dae9ec;
+}
+
+.weather h2 {
+   font-size: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
