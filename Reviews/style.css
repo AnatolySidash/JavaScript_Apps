@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+}
+
+p {
+   padding: 0;
+   margin: 0;
+}
+
+.title {
+   font-size: 35px;
+   margin-bottom: 30px;
+   position: relative;
+}
+
+.title::after {
+   content: '';
+   width: 70px;
+   height: 3px;
+   background-color: rgb(137, 157, 224);
+   position: absolute;
+   bottom: -3px;
+   left: 73px;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   background-color: beige;
+}
+
+.container {
+   width: 400px;
+   padding: 20px 25px;
+   background-color: #fff;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+}
+
+.review img {
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 10px;
+}
+
+.review img::after {
+   content: '';
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: rgb(137, 157, 224);
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 5;
+}
+
+.quotation__mark {
+   position: absolute;
+   right: 53%;
+   top: 34%;
+   z-index: 2;
+   background-color: rgb(137, 157, 224);
+   width: 35px;
+   height: 35px;
+   padding: 4px 0;
+   border-radius: 50%;
+   color: #fff;
+   font-size: 18px;
+}
+
+.review__author {
+   letter-spacing: 2px;
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+.review__job {
+   text-transform: uppercase;
+   font-size: 12px;
+   color: rgb(110, 35, 180);
+   margin-bottom: 10px;
+}
+
+.review__text {
+   font-size: 13px;
+   color: rgb(120, 99, 139);
+   margin-bottom: 10px;
+}
+
+.button__random {
+   display: block;
+   margin: 0 auto;
+   margin-top: 10px;
+   border: 1px solid rgb(183, 145, 219);
+   background-color: transparent;
+   border-radius: 10px;
+   color: rgb(183, 145, 219);
+   padding: 5px 10px;
+   transition: all 0.2s linear;
+   cursor: pointer;
+}
+
+.button__random:hover {
+   color: #fff;
+   background-color: rgb(183, 145, 219);
+}
+
+
+.button {
+   background-color: transparent;
+   border: none;
+   font-size: 24px;
+   color: rgb(139, 91, 184);
+   cursor: pointer;
+   transition: color 0.2s linear;
+}
+
+.button:hover {
+   color: blueviolet;
+}
