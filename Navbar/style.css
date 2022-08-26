@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+}
+
+p {
+   padding: 0;
+   margin: 0;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+}
+
+.header {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 40px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   align-items: center;
+}
+
+.header__logo {
+   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+   font-weight: 400;
+   margin: 0;
+}
+
+.header__logo span {
+   color: rgb(132, 149, 226);
+}
+
+.nav__list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav__item a {
+   width: 100%;
+   padding: 10px 20px;
+   transition: all 0.2s linear;
+}
+
+.nav__item a:hover {
+   background-color: aqua;
+}
+
+.nav__social {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav__link {
+   padding: 0 10px;
+}
+
+.nav__link a {
+   color: rgb(132, 149, 226);
+   transition: all 0.2s linear;
+}
+
+.nav__link a:hover {
+   color: rgb(30, 54, 161)
+}
+
+.nav__mobile {
+   position: fixed;
+   top: 0;
+   right: -200px;
+   background-color: #fff;
+   width: 200px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   height: 100%;
+   padding: 80px 0 0 0;
+   transition: all 0.4s linear;
+}
+
+.nav__list__mobile {
+   width: 100%;
+}
+
+.nav__item__mobile {
+   padding: 10px;
+   transition: all 0.2s linear;
+}
+
+.nav__item__mobile:hover {
+   padding-left: 20px;
+   background-color: aqua;
+}
+
+.burger {
+   font-size: 28px;
+   display: none;
+   border: none;
+   background-color: transparent;
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+
+.burger:hover {
+   color: rgb(132, 149, 226);
+   transform: rotate(90deg);
+}
+
+.cross {
+   position: absolute;
+   top: 40px;
+   left: 10px;
+   font-size: 28px;
+   transition: all 0.3s linear;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+
+.cross:hover {
+   color: rgb(132, 149, 226);
+   transform: rotate(90deg);
+}
+
+
+
+
+@media (max-width: 799px) {
+
+   .nav__social {
+      display: none;
+   }
+}
+
+@media (max-width: 649px) {
+
+   .nav {
+      display: none;
+   }
+
+   .nav__mobile.active {
+      right: 0;
+   }
+
+   .burger {
+      display: block;
+   }
+}
