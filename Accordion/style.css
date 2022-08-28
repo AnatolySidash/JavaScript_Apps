@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   margin: 0;
+   padding: 0;
+}
+
+p {
+   padding: 0;
+   margin: 0;
+}
+
+.main {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(211, 233, 232);
+}
+
+.title {
+   margin-bottom: 40px;
+   font-family: 'Dancing Script', cursive;
+   color: rgb(42, 184, 42);
+   font-size: 40px;
+}
+
+
+.block {
+   width: 500px;
+   background-color: #fff;
+   border-radius: 5px;
+   position: relative;
+   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   transition: 0.5s linear;
+}
+
+.question {
+   font-weight: 500;
+   letter-spacing: 2px;
+   padding: 20px;
+   text-transform: capitalize;
+   font-size: 15px;
+}
+
+.text {
+   font-size: 12px;
+   font-weight: 400;
+   color: rgb(82, 92, 92);
+   margin: 0 20px 20px;
+   padding-top: 20px;
+   border-top: 1px solid rgb(201, 214, 212);
+}
+
+.button {
+   background-color: transparent;
+   border: none;
+   color: rgb(42, 184, 42);
+   font-size: 20px;
+   cursor: pointer;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   transition: all 0.2s linear;
+}
+
+.button:hover {
+   color: rgb(47, 134, 47);
+}
+
+.text {
+   display: none;
+}
+
+.button__minus {
+   display: none;
+}
+
+.show__text .text {
+   display: block;
+}
+
+.show__text .button__minus {
+   display: inline;
+}
+
+.show__text .button__plus {
+   display: none;
+}
