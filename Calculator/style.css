@@ -11,7 +11,7 @@ body {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: #777;
+   background-color: rgb(79, 80, 134);
 }
 
 p {
@@ -27,6 +27,8 @@ p {
    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
    column-gap: 5px;
    row-gap: 5px;
+   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+   background-color: transparent;
 }
 
 .calculator__container>button {
@@ -37,7 +39,9 @@ p {
    outline: none;
    background-color: rgba(162, 175, 172, 0.75);
    transition: all 0.3s linear;
-   border-radius: 2px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .calculator__container>button:hover {
@@ -62,7 +66,7 @@ p {
    align-items: flex-end;
    word-wrap: break-word;
    word-break: break-all;
-   border-radius: 2px;
+   border-radius: 5px;
 }
 
 .main__screen {
@@ -71,4 +75,16 @@ p {
 
 .upper__screen {
    color: rgba(255, 255, 255, 0.65);
+}
+
+.calculator__container .operation__button {
+   background-color: rgb(148, 148, 65);
+}
+
+.calculator__container .equals__button {
+   background-color: rgb(148, 148, 65);
+}
+
+.calculator__container .clear__button {
+   background-color: rgb(196, 75, 75);
 }
