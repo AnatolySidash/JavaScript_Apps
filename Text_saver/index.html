@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Text Saver</title>
+
+</head>
+
+<body>
+   <h1 class="title">Text Saver</h1>
+   <div class="container">
+      <form action="#" class="form">
+         <textarea class="textarea" placeholder="Enter something to save" required></textarea>
+         <div class="input__wrapper">
+            <div class="input__block">
+               <label for="file__name" class="text__label">File name</label>
+               <input type="text" id="file__name" class="name__input" placeholder="Enter file name">
+            </div>
+            <div class="input__block">
+               <label for="select" class="name__label">Save as</label>
+               <select name="file__type" id="" class="select">
+                  <option value="text/plain">Text File (.txt)</option>
+                  <option value="application/vnd.ms-powerpoint">PPT File (.ppt)</option>
+                  <option value="application/msword">Doc File (.doc)</option>
+                  <option value="text/html">HTML File (.html)</option>
+                  <option value="image/svg+xml">SVG File (.svg)</option>
+                  <option value="text/javascript">JS File (.js)</option>
+               </select>
+            </div>
+         </div>
+         <button class="button">Save as Text File</button>
+      </form>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

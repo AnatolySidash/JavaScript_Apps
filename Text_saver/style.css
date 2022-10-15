@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #988;
+}
+
+p {
+   padding: 0;
+   margin: 0;
+}
+
+.title {
+   font-size: 30px;
+   font-weight: 300;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+
+.container {
+   width: 500px;
+   height: auto;
+   background-color: #fff;
+   border-radius: 8px;
+   padding: 30px 20px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.textarea {
+   display: block;
+   width: 100%;
+   height: 300px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   resize: none;
+   outline: none;
+   padding: 15px;
+   font-family: inherit;
+   font-size: 18px;
+   color: #333;
+}
+
+.textarea:focus {
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   border-color: aqua;
+}
+
+.input__wrapper {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.input__block {
+   display: flex;
+   flex-direction: column;
+   width: 48%;
+}
+
+.name__input:focus {
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   border-color: aqua;
+}
+
+.input__block:nth-child(1) {
+   margin-right: 20px;
+}
+
+.text__label,
+.name__label {
+   margin-bottom: 5px;
+   font-size: 20px;
+}
+
+.name__input,
+.select {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: 100%;
+   height: 50px;
+   padding-left: 15px;
+   outline: none;
+   font-family: inherit;
+   font-size: 18px;
+   color: #333;
+}
+
+.select:focus {
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+   border-color: aqua;
+}
+
+.button {
+   width: 100%;
+   height: 70px;
+   border: none;
+   background-color: #988;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 300;
+   letter-spacing: 2px;
+   font-family: inherit;
+   cursor: pointer;
+   transition: all 0.3s linear;
+   opacity: 0.7;
+   pointer-events: none;
+}
+
+.button:hover {
+   color: #333;
+   background-color: aqua;
+}
+
+.textarea:valid~.button {
+   opacity: 1;
+   pointer-events: auto;
+}
